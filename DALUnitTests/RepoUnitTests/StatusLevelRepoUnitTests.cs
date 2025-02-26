@@ -1,4 +1,3 @@
-
 using DAL.Models;
 using DAL.Repositories;
 using DAL.Repositories.Interfaces;
@@ -8,6 +7,7 @@ using Moq;
 
 namespace DALUnitTests.RepoUnitTests
 {
+    [TestFixture]
     public class StatusLevelUnitTests
     {
         private IStatusLevelRepository _repository;
@@ -35,6 +35,7 @@ namespace DALUnitTests.RepoUnitTests
         });
             _context.SaveChanges();
         }
+
         [OneTimeTearDown]
         public void TearDown()
         {

@@ -31,7 +31,7 @@ public partial class Application
 
     public bool? IsDeleted { get; set; }
 
-    public virtual ICollection<Inqury> Inquries { get; set; } = new List<Inqury>();
+    public virtual ICollection<Inqury?> Inquries { get; set; } = new List<Inqury?>();
 
     public virtual StatusLevel Status { get; set; } = null!;
 }
