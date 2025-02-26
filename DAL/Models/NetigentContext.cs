@@ -1,18 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace DAL.Models;
 
 public partial class NetigentContext : DbContext
 {
-    public NetigentContext()
+    private readonly IConfiguration _config;
+    public NetigentContext(IConfiguration config)
     {
+        _config = config;
     }
 
-    public NetigentContext(DbContextOptions<NetigentContext> options)
+    public NetigentContext(DbContextOptions<NetigentContext> options, IConfiguration config)
         : base(options)
     {
+        _config = config;
     }
 
     public virtual DbSet<Application> Applications { get; set; }
@@ -24,7 +28,7 @@ public partial class NetigentContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
-            optionsBuilder.UseSqlServer("Data Source=AWAIS-PC\\SQLEXPRESS;Initial Catalog=Netigent;Integrated Security=True;TrustServerCertificate=True;Pooling=False");
+            optionsBuilder.UseSqlServer((_config.GetConnectionString("NetigentConnectionString")));
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

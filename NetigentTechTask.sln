@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALUnitTests", "DALUnitTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BAL\BLL.csproj", "{ED491F23-A272-45F9-82A8-A99181921F1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetigentWebApi", "NetigentWebApi\NetigentWebApi.csproj", "{D578AC23-185D-4103-A148-9C701AB7CD05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{ED491F23-A272-45F9-82A8-A99181921F1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED491F23-A272-45F9-82A8-A99181921F1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED491F23-A272-45F9-82A8-A99181921F1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D578AC23-185D-4103-A148-9C701AB7CD05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D578AC23-185D-4103-A148-9C701AB7CD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D578AC23-185D-4103-A148-9C701AB7CD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D578AC23-185D-4103-A148-9C701AB7CD05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
