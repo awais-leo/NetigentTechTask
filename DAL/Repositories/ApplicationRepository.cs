@@ -79,8 +79,8 @@ namespace DAL.Repositories
                     .SetProperty(a => a.Notes, application.Notes)
                     .SetProperty(a => a.Modified, application.Modified)
                     .SetProperty(a => a.IsDeleted, application.IsDeleted)
-                    .SetProperty(a => a.Inquries, application.Inquries)
-                    .SetProperty(a => a.Status, application.Status)
+                    //.SetProperty(a => a.Inquries, application.Inquries)
+                    //.SetProperty(a => a.Status, application.Status)
                 );
             
         }

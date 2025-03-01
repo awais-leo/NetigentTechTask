@@ -17,6 +17,7 @@ const ApplicationEdit = () => {
     
   }, []);
 
+  const latestInquiry = inquiries.length > 0 ? inquiries[inquiries.length-1] : null;
   
   const fetchApplication = async () => {
     try {
@@ -73,11 +74,10 @@ const ApplicationEdit = () => {
      
       {/* New Inquiry Alert */}
       <b >New Inquiry</b>
-      <Alert variant="warning">
-   
-       
-     
-      </Alert>
+<Alert variant="warning">
+  {latestInquiry && <p>{latestInquiry.inquiry}</p>}
+ 
+</Alert>
 
       {/* Form */}
       <Form onSubmit={handleSubmit} className="mb-4">
