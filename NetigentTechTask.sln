@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BAL\BLL.csproj", "{E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetigentWebApi", "NetigentWebApi\NetigentWebApi.csproj", "{D578AC23-185D-4103-A148-9C701AB7CD05}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "applicationclientapp", "ApplicationClientApp\applicationclientapp.esproj", "{E3C864B2-D182-4F60-9A99-EFC58F70393B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{D578AC23-185D-4103-A148-9C701AB7CD05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D578AC23-185D-4103-A148-9C701AB7CD05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D578AC23-185D-4103-A148-9C701AB7CD05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C864B2-D182-4F60-9A99-EFC58F70393B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C864B2-D182-4F60-9A99-EFC58F70393B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C864B2-D182-4F60-9A99-EFC58F70393B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E3C864B2-D182-4F60-9A99-EFC58F70393B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C864B2-D182-4F60-9A99-EFC58F70393B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C864B2-D182-4F60-9A99-EFC58F70393B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

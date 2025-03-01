@@ -25,8 +25,9 @@ namespace DAL.Repositories
         {
             _logger.LogInformation("Getting all applications");
 
-            return await _context.Applications
-                         .Include(a => a.Status).ToListAsync();
+            return await  _context.Applications
+                        .AsNoTracking()
+                        .Include(a => a.Status).ToListAsync();
             
         }
 
@@ -34,7 +35,7 @@ namespace DAL.Repositories
         {
             _logger.LogInformation("Getting application by id");
 
-            return await _context.Applications
+             return await _context.Applications
                                .Include(a => a.Inquries)
                                .Include(a => a.Status)
                                .FirstOrDefaultAsync(a => a.Id == id);
